@@ -22,3 +22,8 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+
+.pano {
+  grid-column: 1 / -1;
+  grid-row: 1 / -2;
+}
