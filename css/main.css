@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  background-color: #ccc;
 }
 
 *,
@@ -21,9 +22,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  line-height: 1.5;
 }
 
 .pano {
   grid-column: 1 / -1;
   grid-row: 1 / -2;
+}
+
+.logo {
+  width: 14rem;
 }
