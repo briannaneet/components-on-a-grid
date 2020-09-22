@@ -21,7 +21,7 @@ header {
 body {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   line-height: 1.5;
 }
 
@@ -32,4 +32,6 @@ body {
 
 .logo {
   width: 14rem;
+  grid-column: 1;
+  grid-row: 3;
 }
