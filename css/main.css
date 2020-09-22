@@ -44,6 +44,12 @@ main:last-child {
 .logo {
   width: 14rem;
   grid-area: box1;
+  z-index: 1;
+}
+
+nav {
+  grid-area: box1;
+  z-index: 1;
 }
 
 h2 {
