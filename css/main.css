@@ -34,6 +34,8 @@ body {
   grid-template-areas:
     "box1 box1"
     "box2 box2";
+  grid-gap: 1rem;
+  padding: 1rem;
 }
 
 .pano {
@@ -43,6 +45,8 @@ body {
 
 main {
   grid-area: box2;
+  display: flex;
+  grid-gap: 1rem;
 }
 
 .logo {
@@ -51,6 +55,7 @@ main {
   grid-column: 1;
   grid-row: 2;
   align-self: flex-end;
+  margin: 1rem;
 }
 
 nav {
@@ -66,21 +71,21 @@ h2 {
 
 a {
   color: #fff;
+  font-size: 2rem;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 p {
   font-family: serif;
 }
 
-main {
-  display: flex;
-}
-
 figure {
   width: 100%;
+  margin: 0;
 }
