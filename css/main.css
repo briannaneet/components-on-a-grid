@@ -1,8 +1,8 @@
 html {
   box-sizing: border-box;
-  background-color: #ccc;
-  /* ^ to see light text better temporarily ^ */
+  line-height: 1.5;
   font-family: "Patua One", sans-serif;
+  background-color: #f2f1ed;
 }
 
 *,
@@ -25,8 +25,7 @@ body {
   display: grid;
   grid-template-areas:
     "box1 box1"
-    "box1 box1"
-    "box2 box3";
+    "box2 box2";
 }
 
 .pano {
@@ -38,7 +37,7 @@ main:first-child {
 }
 
 main:last-child {
-  grid-area: box3;
+  grid-area: box2;
 }
 
 .logo {
@@ -68,4 +67,12 @@ ul {
 
 p {
   font-family: serif;
+}
+
+main {
+  display: flex;
+}
+
+figure {
+  width: 100%;
 }
