@@ -22,6 +22,10 @@ img {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+  grid-area: box1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 body {
@@ -33,26 +37,27 @@ body {
 }
 
 .pano {
-  grid-area: box1;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
-main:first-child {
-  grid-area: box2;
-}
-
-main:last-child {
+main {
   grid-area: box2;
 }
 
 .logo {
   width: 14rem;
-  grid-area: box1;
   z-index: 1;
+  grid-column: 1;
+  grid-row: 2;
+  align-self: flex-end;
 }
 
 nav {
-  grid-area: box1;
   z-index: 1;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: flex-start;
 }
 
 h2 {
